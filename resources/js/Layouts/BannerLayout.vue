@@ -31,7 +31,7 @@
             AKO's PORTFOLIO
         </h1>
     </header>
-    <!-- <div class="relative overflow-hidden">
+    <div class="relative overflow-hidden">
         <nav
             class="fixed left-[-10000px] inset-0 w-screen bg-darkblue flex justify-center items-center h-screen z-40 transition-all delay-150 duration-700"
         >
@@ -107,12 +107,12 @@
                 </li>
             </ul>
         </nav>
-    </div> -->
+    </div> 
     
-    <!-- <section
+    <section
         class="min-h-screen banner py-20 overflow-hidden relative w-full m-auto"
     >
-        @include('includes.parrallex')
+        <Parallax/>
         <div
             class="container m-auto bg-transparent flex flex-col lg:flex-row justify-center items-center"
         >
@@ -131,7 +131,7 @@
                     <p class="text pb-4 text-white text-base">
                         I, as a full stack developer, can provide the technical
                         expertise and creative solutions necessary to build a
-                        website that stands out by reflexing how you want the
+                        website that stands out by reflecting how you want the
                         world to see you...
                     </p>
                 </div>
@@ -156,12 +156,12 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <slot></slot>
 </template>
 
 <script setup>
-// import MainLayout from "@/Layouts/MainLayout.vue";
+import Parallax from "@/Layouts/Parallax.vue"
 </script>
 
 <script>
@@ -266,7 +266,7 @@ gsap.timeline()
     });
 </script>
 
-<style>
+<style scoped>
     .waterlike {
         border-radius: 52% 48% 77% 23% / 45% 59% 41% 55%;
     }
