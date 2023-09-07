@@ -31,7 +31,7 @@
                         class="flex iconic flex-row items-center justify-center w-full lg:w-[320px] lg:py-12 ml-0 rounded-full"
                     >
                         <div
-                            class="my-3 group peer m-auto w-8 h-8 rounded-full outline outline-[16px] outline-black -outline-offset-[16px] hover:outline-4 hover:outline-red hover:outline-offset-8 hover:outline transition delay-75 duration-500"
+                            class="my-3 group peer social-media-link-box-2"
                         >
                             <a
                                 href=""
@@ -41,7 +41,7 @@
                             </a>
                         </div>
                         <div
-                            class="my-3 group peer m-auto w-8 h-8 rounded-full outline outline-[16px] outline-black -outline-offset-[16px] hover:outline-4 hover:outline-red hover:outline-offset-8 hover:outline transition delay-75 duration-500"
+                            class="my-3 group peer social-media-link-box-2"
                         >
                             <a
                                 href=""
@@ -51,7 +51,7 @@
                             </a>
                         </div>
                         <div
-                            class="my-3 group peer m-auto w-8 h-8 rounded-full outline outline-[16px] outline-black -outline-offset-[16px] hover:outline-4 hover:outline-red hover:outline-offset-8 hover:outline transition delay-75 duration-500"
+                            class="my-3 group peer social-media-link-box-2"
                         >
                             <a
                                 href=""
@@ -61,7 +61,7 @@
                             </a>
                         </div>
                         <div
-                            class="my-3 group peer m-auto w-8 h-8 rounded-full outline outline-[16px] outline-black -outline-offset-[16px] hover:outline-4 hover:outline-red hover:outline-offset-8 hover:outline transition delay-75 duration-500"
+                            class="my-3 group peer social-media-link-box-2"
                         >
                             <a
                                 href=""

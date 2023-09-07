@@ -65,23 +65,7 @@
         <div id="circle" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);"
             class="bg-black rounded-full absolute top-0 -left-2/4 w-28 h-28 border-4 border-white"></div>
     </div>
-    <div class=" w-full lg:w-6/12 relative hidden lg:block ">
-        <div style=" box-shadow: inset 0 25px 70px rgba(255,255,255,0.15);"
-            class="glow relative w-[500px] h-[500px] flex justify-center items-center rounded-full">
-            <div style=" --clr: #FF521B;"
-                class="circle absolute w-[20px] h-[20px] flex justify-end items-start rounded-full before:absolute before:top-0 before:left-0 before:w-[7px] before:h-[7px] before:rounded-full">
-            </div>
-            <div style="--clr: #93032E;"
-                class="circle absolute w-[20px] h-[20px] flex justify-end items-start rounded-full before:absolute before:top-0 before:left-0 before:w-[7px] before:h-[7px] before:rounded-full ">
-            </div>
-            <div style="--clr: #034C3C;  "
-                class="circle absolute w-[15px] h-[15px] flex justify-end items-start rounded-full before:absolute before:top-0 before:left-0 before:w-[7px] before:h-[7px] before:rounded-full">
-            </div>
-            <div style="--clr: #1B1B3A; "
-                class="circle absolute w-[15px] h-[15px] flex justify-end items-start rounded-full before:absolute before:top-0 before:left-0 before:w-[7px] before:h-[7px] before:rounded-full">
-            </div>
-        </div>
-    </div>
+    
 </div>
 
 </section>
