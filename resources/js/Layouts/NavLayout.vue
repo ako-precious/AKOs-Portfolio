@@ -35,7 +35,7 @@
                         >
                             <a
                                 href=""
-                                class="text-white text-center w-full h-full flex justify-center items-center hover:text-red transition delay-75 duration-500 relative"
+                                class="social-media-link"
                             >
                                 <i class="fa-solid fa-envelope"></i>
                             </a>
@@ -45,7 +45,7 @@
                         >
                             <a
                                 href=""
-                                class="text-white text-center w-full h-full flex justify-center items-center hover:text-red transition delay-75 duration-500 relative"
+                                class="social-media-link"
                             >
                                 <i class="fa-brands fa-github"></i>
                             </a>
@@ -55,7 +55,7 @@
                         >
                             <a
                                 href=""
-                                class="text-white text-center w-full h-full flex justify-center items-center hover:text-red transition delay-75 duration-500 relative"
+                                class="social-media-link"
                             >
                                 <i class="fa-brands m-auto fa-linkedin"></i>
                             </a>
@@ -65,7 +65,7 @@
                         >
                             <a
                                 href=""
-                                class="text-white text-center w-full h-full flex justify-center items-center hover:text-red transition delay-75 duration-500 relative"
+                                class="social-media-link"
                             >
                                 <i class="fa-brands m-auto fa-twitter"></i>
                             </a>

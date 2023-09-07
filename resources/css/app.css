@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@layout components {
-
+@layer components {
+  .parallax {
+    @apply absolute w-full h-full top-0 left-0 object-cover
+  }
+ 
+  .social-media-link {
+    @apply text-white text-center w-full h-full flex justify-center items-center hover:text-red transition delay-75 duration-500 relative
+  }
+ 
 }

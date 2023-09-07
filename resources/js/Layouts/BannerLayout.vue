@@ -4,56 +4,26 @@
         <NavLayout />
     </div>
 
-    <section
-        v-on:mouseover="parallax(e)"
+    <section    
+        
         class="min-h-screen banner py-20 overflow-hidden relative w-full m-auto"
     >
         <Parallax />
-        <div
-            class="container m-auto bg-transparent flex flex-col lg:flex-row justify-center items-center"
-        >
-            <div class="w-full lg:w-6/12 py-6 relative written-text">
-                <div class="flex w-64 md:w-96 m-auto flex-col justify-center">
-                    <h1
-                        data-replace="Full-Stack developer."
-                        role="heading"
-                        class="swap leading-10 pb-4 lg:text-7xl md:text-5xl text-darkblue text-3xl font-bold capitalize transition-all delay-75"
-                    >
-                        <span
-                            >Full-Stack <br />
-                            developer.
-                        </span>
-                    </h1>
-                    <p class="text pb-4 text-white text-base">
-                        I, as a full stack developer, can provide the technical
-                        expertise and creative solutions necessary to build a
-                        website that stands out by reflecting how you want the
-                        world to see you...
-                    </p>
-                </div>
-            </div>
-            <div class="w-full lg:w-6/12 pt-3 m-auto relative my-image">
-                <div
-                    class="outer w-64 md:w-80 h-64 md:h-80 m-auto grid place-items-center layer"
-                    data-speed="0"
-                >
-                    <div
-                        class="waterlike z-20 bg-red w-full h-full overflow-hidden transition-all delay-75 duration-500"
-                    >
-                        <img
-                            src="../../images/akoprecious.jpg"
-                            class="w-full h-full object-cover"
-                            alt=""
-                        />
-                    </div>
-                    <div
-                        class="waterlike z-10 below bg-red w-full h-full overflow-hidden transition-all delay-100 duration-700 mt-8 mr-8"
-                    ></div>
-                </div>
-            </div>
-        </div>
+<!-- <img src="../../images/1.png"  v-for="layer in layers" :key="layer.id" :data-speed="layer.speed"  class="parallax layer">
+<img src="../../images/2.png"  v-for="layer in layers" :key="layer.id" :data-speed="layer.speed"  class="parallax layer">
+<img src="../../images/3.png"  v-for="layer in layers" :key="layer.id" :data-speed="layer.speed"  class="parallax layer">
+<img src="../../images/4.png"  v-for="layer in layers" :key="layer.id" :data-speed="layer.speed"  class="parallax layer">
+<img src="../../images/5.png"  v-for="layer in layers" :key="layer.id" :data-speed="layer.speed"  class="parallax layer">
+<img src="../../images/6.png"  v-for="layer in layers" :key="layer.id" :data-speed="layer.speed"  class="parallax layer">
+<img src="../../images/7.png"  v-for="layer in layers" :key="layer.id" :data-speed="layer.speed"  class="parallax layer">
+<img src="../../images/8.png"  v-for="layer in layers" :key="layer.id" :data-speed="layer.speed"  class="parallax layer">
+<img src="../../images/9.png"  v-for="layer in layers" :key="layer.id" :data-speed="layer.speed"  class="parallax layer">
+<img src="../../images/10.png"  v-for="layer in layers" :key="layer.id" :data-speed="layer.speed"  class="parallax layer">
+<img src="../../images/11.png"  v-for="layer in layers" :key="layer.id" :data-speed="layer.speed"  class="parallax layer">
+<img src="../../images/12.png"  v-for="layer in layers" :key="layer.id" :data-speed="layer.speed"  class="parallax layer"> -->
+
+        <slot></slot>
     </section>
-    <slot></slot>
 </template>
 
 <script setup>
@@ -100,6 +70,42 @@ onMounted(() => {
 });
 </script>
 
+<!-- <script>
+export default {
+  data() {
+    return {
+      layers: [
+        { id: 1, speed: -5 }, // Example layer with speed attribute
+        { id: 2, speed: 5 }, // Add more layers as needed
+        { id: 3, speed: 2 }, // Add more layers as needed
+        { id: 4, speed: 8 }, // Add more layers as needed
+        { id: 5, speed: 6 }, // Add more layers as needed
+        { id: 6, speed: -9 }, // Add more layers as needed
+        { id: 7, speed: -2 }, // Add more layers as needed
+        { id: 8, speed: -7 }, // Add more layers as needed
+        { id: 9, speed: 9 }, // Add more layers as needed
+        { id: 10, speed: 0.7 }, // Add more layers as needed
+        { id: 11, speed: -5 }, // Add more layers as needed
+        { id: 12, speed: 7 }, // Add more layers as needed
+      ],
+    };
+  },
+  methods: {
+    parallax(e) {
+      this.layers.forEach((layer) => {
+        const speed = layer.speed;
+        const x = (window.innerWidth - e.pageX * speed) / 100;
+        const y = (window.innerHeight - e.pageY * speed) / 100;
+        const layerElement = document.querySelector(`[data-speed="${speed}"]`);
+        if (layerElement) {
+          layerElement.style.transform = `translateX(${x}px) translateY(${y}px)`;
+        }
+      });
+    },
+  },
+};
+</script> -->
+
 <script>
 // Creating a smoke animation
 export default {
@@ -107,20 +113,8 @@ export default {
 };
 
 // Creating a smoke animation
-const text = document.querySelector(".text");
-text.innerHTML = text.textContent.replace(
-    /\S/g,
-    `<span class="smoke">$&</span>`
-);
 
-// now, add active class on hovered <span> tag const letters = document.querySelectorAll('span');
-const letters = document.querySelectorAll(".smoke");
-for (let i = 0; i < letters.length; i++) {
-    letters[i].addEventListener("mouseover", function () {
-        letters[i].classList.toggle("active");
-    });
-}
-// // parallax animation
+
 document.addEventListener("mousemove", parallax);
 
 function parallax(e) {
@@ -131,6 +125,7 @@ function parallax(e) {
         layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
     });
 }
+
 </script>
 
 <style>
@@ -177,45 +172,6 @@ function parallax(e) {
     grid-column: 1 / 1;
     grid-row: 1 / 1;
 }
-
-/* smoke animation */
-section .text span {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-}
-
-section .text span.active {
-    animation: smoke 3s linear forwards;
-    transform-origin: bottom;
-}
-
-@keyframes smoke {
-    0% {
-        opacity: 1;
-        filter: blur(0);
-        transform: translatex(0) translateY(0) rotate(0deg) scale(1);
-    }
-
-    50% {
-        /* opacity: 1;
-                pointer-events: none; */
-        opacity: 0;
-        filter: blur(20px);
-        transform: translatex(300px) translateY(-300px) rotate(740deg) scale(4);
-    }
-
-    100% {
-        /* opacity: 0;
-                filter: blur(20px);
-                transform: translatex(300) translateY(-300) rotate(740deg) scale(4); */
-        opacity: 1;
-        filter: blur(0);
-        transform: translatex(0) translateY(0) rotate(0deg) scale(1);
-    }
-}
-
-/* end of smoke animation */
 
 /* link text swap */
 .swap {
