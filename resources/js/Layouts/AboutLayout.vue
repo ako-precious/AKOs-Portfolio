@@ -105,9 +105,7 @@ document.addEventListener("mousemove", (e) => {
     circle.style.top = `${mouse_y - halfCircleSize}px`;
     circle.style.left = `${mouse_x - halfCircleSize}px`;
 });
-window.addEventListener('mousemove', function(e) {
-    console.log(`Mouse position: ${e.clientX}, ${e.clientY}`);
-});
+
 </script>
 
 <style scoped>

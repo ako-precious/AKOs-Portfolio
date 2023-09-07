@@ -10,5 +10,17 @@
   .social-media-link {
     @apply text-white text-center w-full h-full flex justify-center items-center hover:text-red transition delay-75 duration-500 relative
   }
+  .contentBox {
+    @apply absolute top-0 left-0 w-full h-full before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-red before:scale-x-0 before:transition-transform before:duration-700 before:origin-right before:delay-75 group-hover:before:scale-x-100 group-hover:before:transition-transform group-hover:before:duration-700 group-hover:before:origin-left group-hover:flex group-hover:justify-center group-hover:items-center
+  }
+  .Content {
+    @apply relative p-8 z-10 transition-transform -translate-x-80 delay-0 group-hover:translate-x-0 group-hover:delay-75
+  }
+  .work-description {
+    @apply absolute right-0 mt-[200px] mb-[40px] p-10 bg-darkblue z-10 max-w-[400px] text-white shadow-xl ease-in-out before:absolute before:w-full before:h-3 before:bg-red before:bottom-0 before:right-0 before:origin-right before:scale-x-0 before:transition-transform before:delay-75 before:duration-500 hover:before:origin-left hover:before:scale-x-100
+  }
+  .work-description-2 {
+    @apply absolute left-0 mt-[200px] mb-[40px] p-10 bg-darkblue z-10 max-w-[400px] text-white shadow-xl ease-in-out before:absolute before:w-full before:h-3 before:bg-red before:bottom-0 before:right-0 before:origin-right before:scale-x-0 before:transition-transform before:delay-75 before:duration-500 hover:before:origin-left hover:before:scale-x-100
+  }
  
 }
