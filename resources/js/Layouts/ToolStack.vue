@@ -1,16 +1,20 @@
 <template>
 <section class="relative overflow-hidden py-12 lg:py-20 min-h-screen">
     <div class="container m-auto lg:py-3 bg-transparent flex flex-col lg:flex-row justify-center items-center">
-        <div class=" w-full lg:w-6/12 relative">
-            <div class="flex pl-5 m-auto flex-col justify-center items-center md:items-start">
-                <h1 data-replace="Skills." role="heading"
-                    class="worksheader swap leading-10 pb-4 lg:text-7xl md:text-5xl text-darkblue text-3xl font-bold capitalize transition-all delay-75 ">
-                    <span>Skills.
-                    </span>
-                </h1>
+        <div class="w-full lg:w-7/12 relative">
+                <div
+                    class="flex w-64 md:w-96 lg:w-[600px] m-auto flex-col justify-center items-center md:items-start"
+                >
+                    <h1
+                        data-replace="Tools Stack."
+                        role="heading"
+                        class="worksheader swap leading-10 pb-4 lg:text-7xl md:text-5xl text-white text-3xl font-bold capitalize transition-all delay-75"
+                    >
+                        <span>Tools Stack. </span>
+                    </h1>
+                </div>
             </div>
-        </div>
-        <div class=" w-full lg:w-6/12 relative ">
+        <div class=" w-full lg:w-4/12 relative ">
 
         </div>
     </div>

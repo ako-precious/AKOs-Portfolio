@@ -6,9 +6,9 @@
         <div
             class="container m-auto bg-transparent flex flex-col lg:flex-row justify-center items-center"
         >
-            <div class="w-full lg:w-6/12 relative">
+            <div class="w-full lg:w-7/12 relative">
                 <div
-                    class="flex w-64 md:w-96 m-auto flex-col justify-center items-center md:items-start"
+                    class="flex w-64 md:w-96 lg:w-[600px] m-auto flex-col justify-center items-center md:items-start "
                 >
                     <h1
                         data-replace="Selected Works."
@@ -19,9 +19,9 @@
                     </h1>
                 </div>
             </div>
-            <div class="w-full lg:w-6/12 relative written-text"></div>
+            <div class="w-full lg:w-4/12 relative written-text"></div>
         </div>
-        <WorksPhone/>
+        <WorksPhone />
         <div
             class="container relative hidden lg:flex flex-col justify-center items-center m-auto"
         >
@@ -44,9 +44,7 @@
                             alt=""
                         />
                     </div>
-                    <div
-                        class="content work-description"
-                    >
+                    <div class="content work-description">
                         <p>
                             I created a room reservation system that allows
                             users to reserve rooms for various purposes such as
@@ -84,9 +82,7 @@
                             alt=""
                         />
                     </div>
-                    <div
-                        class="content work-description-2"
-                    >
+                    <div class="content work-description-2">
                         <p>
                             I created a medical registration system manages the
                             registration and tracking of patients,and medical
@@ -124,9 +120,7 @@
                             alt=""
                         />
                     </div>
-                    <div
-                        class="content work-description"
-                    >
+                    <div class="content work-description">
                         <p>
                             I built loan processing system is that automates the
                             loan application, approval, and disbursal process.
@@ -164,9 +158,7 @@
                             alt=""
                         />
                     </div>
-                    <div
-                        class="content work-description-2"
-                    >
+                    <div class="content work-description-2">
                         <p>
                             I created a QR code attendance system that allows
                             individuals to check in to a class by scanning a
@@ -197,7 +189,7 @@ import { onMounted } from "vue";
 //     gsap.from(".worksheader", {
 //         scrollTrigger: {
 //             trigger: ".workssection",
-//             start: "top 70%",
+//             start: "top top",
 //             markers: true,
 //             scrub: 1,
 //             end: " bottom top",
@@ -210,7 +202,7 @@ import { onMounted } from "vue";
 //     gsap.from(".works", {
 //         scrollTrigger: {
 //             trigger: ".workssection",
-//             start: "top 40%",
+//             start: "top top",
 //             markers: true,
 //             scrub: true,
 //             end: " bottom top",
