@@ -5,11 +5,7 @@
     "functions":{
         "api/index.php": { "runtime": "vercel-php@0.6.0"}
     },
-    "routes": [
-        
-        { "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
-    ],
-   
+    "rewrites": [{ "source": "/(.*)", "destination": "/" }] ,
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
