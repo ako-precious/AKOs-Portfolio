@@ -32,9 +32,7 @@
         </h1>
     </header>
 </template>
-<script setup>
-
-</script>
+<script setup></script>
 <script>
 // Creating a smoke animation
 export default {
@@ -57,6 +55,4 @@ export default {
         },
     },
 };
-
-
 </script>

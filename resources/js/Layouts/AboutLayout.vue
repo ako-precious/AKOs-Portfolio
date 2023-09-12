@@ -158,7 +158,7 @@ export default {
     line-height: 250px;
     text-align: center;
     border: 2px solid white;
-    background-color: #93032E;
+    background-color: #93032e;
     font-size: 42px;
     display: block;
     position: absolute;

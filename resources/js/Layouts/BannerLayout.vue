@@ -4,12 +4,11 @@
         <NavLayout />
     </div>
 
-    <section    
-        
+    <section
         class="min-h-screen banner py-20 overflow-hidden relative w-full m-auto"
     >
         <Parallax />
-<!-- <img src="../../images/1.png"  v-for="layer in layers" :key="layer.id" :data-speed="layer.speed"  class="parallax layer">
+        <!-- <img src="../../images/1.png"  v-for="layer in layers" :key="layer.id" :data-speed="layer.speed"  class="parallax layer">
 <img src="../../images/2.png"  v-for="layer in layers" :key="layer.id" :data-speed="layer.speed"  class="parallax layer">
 <img src="../../images/3.png"  v-for="layer in layers" :key="layer.id" :data-speed="layer.speed"  class="parallax layer">
 <img src="../../images/4.png"  v-for="layer in layers" :key="layer.id" :data-speed="layer.speed"  class="parallax layer">
@@ -114,7 +113,6 @@ export default {
 
 // Creating a smoke animation
 
-
 document.addEventListener("mousemove", parallax);
 
 function parallax(e) {
@@ -125,7 +123,6 @@ function parallax(e) {
         layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
     });
 }
-
 </script>
 
 <style>

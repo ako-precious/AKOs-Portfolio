@@ -8,7 +8,7 @@
         >
             <div class="w-full lg:w-7/12 relative">
                 <div
-                    class="flex w-64 md:w-96 lg:w-[600px] m-auto flex-col justify-center items-center md:items-start "
+                    class="flex w-64 md:w-96 lg:w-[600px] m-auto flex-col justify-center items-center md:items-start"
                 >
                     <h1
                         data-replace="Selected Works."
