@@ -86,7 +86,7 @@
                 ></div>
             </div>
             <div class="w-full lg:w-6/12 relative hidden lg:block">
-                <div class="cube">
+                <div class="cube" id="cube" >
                     <div class="top translate"></div>
                     <div class="right"></div>
                     <div class="bottom"></div>
@@ -98,7 +98,8 @@
         </div>
     </section>
 </template>
-<script setup></script>
+<script setup>
+</script>
 <script>
 export default {
     data() {
@@ -137,6 +138,76 @@ export default {
         },
     },
 };
+
+// const cube = document.getElementById('cube');
+// let isDragging = false;
+// let startX, startY;
+// let currentX = 0;
+// let currentY = 0;
+// let rotationX = 0;
+// let rotationY = 0;
+
+// cube.addEventListener('mousedown', onMouseDown);
+// cube.addEventListener('touchstart', onTouchStart);
+
+// document.addEventListener('mousemove', onMouseMove);
+// document.addEventListener('touchmove', onTouchMove);
+
+// document.addEventListener('mouseup', onMouseUp);
+// document.addEventListener('touchend', onTouchEnd);
+
+// function onMouseDown(e) {
+//     e.preventDefault();
+//     isDragging = true;
+//     startX = e.clientX;
+//     startY = e.clientY;
+// }
+
+// function onTouchStart(e) {
+//     e.preventDefault();
+//     isDragging = true;
+//     startX = e.touches[0].clientX;
+//     startY = e.touches[0].clientY;
+// }
+
+// function onMouseMove(e) {
+//     if (!isDragging) return;
+
+//     const deltaX = e.clientX - startX;
+//     const deltaY = e.clientY - startY;
+    
+//     rotationX += deltaY * 0.5;
+//     rotationY += deltaX * 0.5;
+    
+//     cube.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
+    
+//     startX = e.clientX;
+//     startY = e.clientY;
+// }
+
+// function onTouchMove(e) {
+//     if (!isDragging) return;
+
+//     const deltaX = e.touches[0].clientX - startX;
+//     const deltaY = e.touches[0].clientY - startY;
+    
+//     rotationX += deltaY * 0.5;
+//     rotationY += deltaX * 0.5;
+    
+//     cube.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
+    
+//     startX = e.touches[0].clientX;
+//     startY = e.touches[0].clientY;
+// }
+
+// function onMouseUp() {
+//     isDragging = false;
+// }
+
+// function onTouchEnd() {
+//     isDragging = false;
+// }
+
 </script>
 
 <style scoped>

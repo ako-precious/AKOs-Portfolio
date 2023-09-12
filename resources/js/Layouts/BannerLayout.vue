@@ -69,47 +69,9 @@ onMounted(() => {
 });
 </script>
 
-<!-- <script>
-export default {
-  data() {
-    return {
-      layers: [
-        { id: 1, speed: -5 }, // Example layer with speed attribute
-        { id: 2, speed: 5 }, // Add more layers as needed
-        { id: 3, speed: 2 }, // Add more layers as needed
-        { id: 4, speed: 8 }, // Add more layers as needed
-        { id: 5, speed: 6 }, // Add more layers as needed
-        { id: 6, speed: -9 }, // Add more layers as needed
-        { id: 7, speed: -2 }, // Add more layers as needed
-        { id: 8, speed: -7 }, // Add more layers as needed
-        { id: 9, speed: 9 }, // Add more layers as needed
-        { id: 10, speed: 0.7 }, // Add more layers as needed
-        { id: 11, speed: -5 }, // Add more layers as needed
-        { id: 12, speed: 7 }, // Add more layers as needed
-      ],
-    };
-  },
-  methods: {
-    parallax(e) {
-      this.layers.forEach((layer) => {
-        const speed = layer.speed;
-        const x = (window.innerWidth - e.pageX * speed) / 100;
-        const y = (window.innerHeight - e.pageY * speed) / 100;
-        const layerElement = document.querySelector(`[data-speed="${speed}"]`);
-        if (layerElement) {
-          layerElement.style.transform = `translateX(${x}px) translateY(${y}px)`;
-        }
-      });
-    },
-  },
-};
-</script> -->
-
 <script>
 // Creating a smoke animation
-export default {
-    methods: {},
-};
+
 
 // Creating a smoke animation
 
