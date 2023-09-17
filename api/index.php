@@ -4,18 +4,18 @@
 require __DIR__ . '/../public/index.php';
 // Load the Laravel application
 
-require __DIR__ . '/../vendor/autoload.php';
-$app = require_once __DIR__ . '/../bootstrap/app.php';
+// require __DIR__ . '/../vendor/autoload.php';
+// $app = require_once __DIR__ . '/../bootstrap/app.php';
 
-// Run the application I
+// // Run the application I
 
-$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
+// $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 
-$response = $kernel->handle(
+// $response = $kernel->handle(
 
-    $request = Illuminate\Http\Request::capture()
+//     $request = Illuminate\Http\Request::capture()
 
-);
-$response->send();
+// );
+// $response->send();
 
-$kernel->terminate($request, $response);
+// $kernel->terminate($request, $response);
