@@ -7,10 +7,10 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Ako's Portfolio</title>
 
-    <link rel="icon" type="jpg" sizes="32x32" href="{{ asset('logo.jpg') }}">
-    <link rel="icon" type="jpg" sizes="16x16" href="{{ asset('logo.jpg') }}">
-    <link rel="mask-icon" href="{{ asset('logo.jpg') }}">
-    <link rel="shortcut icon" href="{{ asset('logo.jpg') }}">
+    <link rel="icon" type="jpg" sizes="32x32" href="{{ asset('images/logo.jpg') }}">
+    <link rel="icon" type="jpg" sizes="16x16" href="{{ asset('images/logo.jpg') }}">
+    <link rel="mask-icon" href="{{ asset('images/logo.jpg') }}">
+    <link rel="shortcut icon" href="{{ asset('images/logo.jpg') }}">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />

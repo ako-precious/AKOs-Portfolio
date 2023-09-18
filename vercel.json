@@ -11,6 +11,10 @@
           "dest": "/public/build/"
         },
         {
+            "src": "/images/(.*)",
+            "dest": "/public/images/"
+          },
+        {
           "src": "/resources/(.*)",
           "dest": "/public/resources/"
         },
