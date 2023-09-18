@@ -21,9 +21,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/TextPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 
-
-    @vite(['resources/js/app.js', 'resources/js/scrollbar.js'])
-    @inertiaHead()
+    @routes
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/scrollbar.js'])
+    @inertiaHead
     <style>
         html {
             scroll-behavior: smooth;
@@ -32,7 +32,7 @@
 </head>
 
 <body class="antialiased relative bg-black h-screen overflow-x-hiden" id="my-scrollbar">
-    @inertia()
+    @inertia
 </body>
 
 </html>
