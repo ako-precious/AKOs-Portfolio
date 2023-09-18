@@ -6,12 +6,23 @@
         "api/index.php": { "runtime": "vercel-php@0.6.0"}
     },
     "routes": [
-        
         {
-            "src": "/(.*)",
-            "dest": "/api/index.php"
+          "src": "/build/(.*)",
+          "dest": "/public/build/"
+        },
+        {
+          "src": "/resources/(.*)",
+          "dest": "/public/resources/"
+        },
+        {
+          "src": "/favicon/(.*)",
+          "dest": "/public/favicon/"
+        },
+        {
+          "src": "/(.*)",
+          "dest": "/api/index.php"
         }
-    ],
+      ],
    
     "env": {
         "APP_ENV": "production",
@@ -27,6 +38,6 @@
 
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
-        "SESSION_DRIVER": "array"
+        "SESSION_DRIVER": "cookies"
     }
 }
