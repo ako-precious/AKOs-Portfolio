@@ -1,7 +1,7 @@
 <template>
-    <!-- <MainLayout>
+    <MainLayout>
         <Fullstack />
-    </MainLayout> -->
+    </MainLayout>
     <AboutLayout />
     <Works />
     <ToolStack />
