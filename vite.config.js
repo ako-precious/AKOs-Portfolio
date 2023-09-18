@@ -3,10 +3,13 @@ import laravel from "laravel-vite-plugin";
 import vue from "@vitejs/plugin-vue";
 
 export default defineConfig({
-  
     plugins: [
         laravel({
-            input: ["resources/css/app.css", "resources/js/app.js" , 'resources/js/scrollbar.js'],
+            input: [
+                "resources/css/app.css",
+                "resources/js/app.js",
+                "resources/js/scrollbar.js",
+            ],
             refresh: true,
         }),
         vue({
@@ -35,7 +38,27 @@ export default defineConfig({
         commonjsOptions: {
             esmExternals: true,
         },
-    },  resolve: {
+        resolve: {
+            dedupe: ["vue"],
+        },
+        rollupOptions: {
+            external: ["vue"],
+            output: {
+                globals: {
+                    vue: "Vue",
+                },
+            },
+        },
+    },
+    resolve: {
         dedupe: ["vue"],
+    },
+    rollupOptions: {
+        external: ["vue"],
+        output: {
+            globals: {
+                vue: "Vue",
+            },
+        },
     },
 });
