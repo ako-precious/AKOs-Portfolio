@@ -1,5 +1,5 @@
-import { createApp, h } from 'vue'
-import { createInertiaApp } from '@inertiajs/vue3'
+import { createApp, h } from '../../node_modules/vue'
+import { createInertiaApp } from '../../node_modules/@inertiajs/vue3'
 // import { createApp, h } from "vue";
 // import { createInertiaApp, Link } from "@inertiajs/vue3";
 // import { resolvePageComponent } from "laravel-vite-plugin/inertia-helpers";
