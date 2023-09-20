@@ -38,11 +38,11 @@ export default defineConfig({
         commonjsOptions: {
             esmExternals: true,
         },
-        resolve: {
-            dedupe: ["vue"],
-        },
         rollupOptions: {
             external: ["vue"],
+            resolve: {
+                dedupe: ["vue"],
+            },
             output: {
                 globals: {
                     vue: "Vue",
@@ -51,10 +51,10 @@ export default defineConfig({
         },
     },
     rollupOptions: {
+        external: ["vue"],
         resolve: {
             dedupe: ["vue"],
         },
-        external: ["vue"],
         output: {
             globals: {
                 vue: "Vue",
