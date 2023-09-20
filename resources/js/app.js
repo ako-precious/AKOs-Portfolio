@@ -1,4 +1,4 @@
-import { createApp, h } from 'vue'
+import { createApp, h } from '../../node_modules/vue'
 import { createInertiaApp } from '@inertiajs/vue3'
 // import { createApp, h } from "vue";
 // import { createInertiaApp, Link } from "@inertiajs/vue3";
