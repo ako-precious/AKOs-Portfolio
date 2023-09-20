@@ -50,10 +50,10 @@ export default defineConfig({
             },
         },
     },
-    resolve: {
-        dedupe: ["vue"],
-    },
     rollupOptions: {
+        resolve: {
+            dedupe: ["vue"],
+        },
         external: ["vue"],
         output: {
             globals: {
