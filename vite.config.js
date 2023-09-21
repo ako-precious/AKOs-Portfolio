@@ -62,9 +62,9 @@ export default defineConfig({
     //     },
     // },
 
-    // build: {
-    //     rollupOptions: {
-    //       external: ['vue'],
-    //     },
-    //   },
+    build: {
+    rollupOptions: {
+        external: ['vue'],
+      },
+    },
 });
