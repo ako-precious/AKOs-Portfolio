@@ -8,14 +8,13 @@ export default defineConfig({
             input: [
                 "resources/css/app.css",
                 "resources/js/app.js",
-                "resources/js/scrollbar.js"
+                "resources/js/scrollbar.js",
             ],
             refresh: true,
         }),
         vue({
             template: {
                 transformAssetUrls: {
-                   
                     base: null,
 
                     includeAbsolute: false,
@@ -23,5 +22,15 @@ export default defineConfig({
             },
         }),
     ],
-   
+    resolve: {
+        dedupe: ["vue"],
+    },
+    build: {
+        /** If you set esmExternals to true, this plugins assumes that 
+              all external dependencies are ES modules */
+
+        commonjsOptions: {
+            esmExternals: true,
+        },
+    },
 });
