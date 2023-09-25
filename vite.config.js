@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import laravel from "laravel-vite-plugin";
-import vue from "./node_modules/@vitejs/plugin-vue";
-import  inertiaVue from '@inertiajs/vue3';
+import vue from "@vitejs/plugin-vue";
+// import  inertiaVue from './node_modules/vue/dist/';
 
 export default defineConfig({
     plugins: [
@@ -44,14 +44,14 @@ export default defineConfig({
         rollupOptions: {
             // make sure to externalize deps that shouldn't be bundled
             // into your library
-            external: ['vue'],
-            output: {
-              // Provide global variables to use in the UMD build
-              // for externalized deps
-              globals: {
-                vue: 'Vue',
-              },
-            },
+            // external: ["vue", "./node_module/vue3"],
+            // output: {
+            //   // Provide global variables to use in the UMD build
+            //   // for externalized deps
+            //   globals: {
+            //     vue: 'Vue',
+            //   },
+            // },
           },
     },
     
