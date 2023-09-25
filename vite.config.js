@@ -23,40 +23,5 @@ export default defineConfig({
             },
         }),
     ],
-    // build: {
-    //     /** If you set esmExternals to true, this plugins assumes that 
-    //       all external dependencies are ES modules */
-
-    //     commonjsOptions: {
-    //         esmExternals: true,
-    //     },
-    //     rollupOptions: {
-    //         external: ["vue"],
-    //         resolve: {
-    //             dedupe: ["vue"],
-    //         },
-    //         output: {
-    //             globals: {
-    //                 vue: "Vue",
-    //             },
-    //         },
-    //     },
-    // },
-    // rollupOptions: {
-    //     external: ["vue"],
-    //     resolve: {
-    //         dedupe: ["vue"],
-    //     },
-    //     output: {
-    //         globals: {
-    //             vue: "Vue",
-    //         },
-    //     },
-    // },
-
-    // build: {
-    // rollupOptions: {
-    //     external: ['vue'],
-    //   },
-    // },
+   
 });
