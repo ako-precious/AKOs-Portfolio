@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import laravel from "laravel-vite-plugin";
 import vue from "@vitejs/plugin-vue";
+import Vue from 'vue';
 
 export default defineConfig({
     plugins: [
@@ -46,4 +47,14 @@ export default defineConfig({
             },
           },
     },
+    plugins: [
+        ...
+        inertiaVue({
+          resolve: async (name) => {
+            const pages = import.meta.glob('./Pages/**/*.vue')
+      
+            return (await pages[`./Pages/${name}.vue`]())
+          },
+        }),
+      ],
 });
