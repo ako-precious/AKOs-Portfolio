@@ -13,14 +13,14 @@
         "postcss": "^8.4.29",
         "tailwindcss": "^3.3.3",
         "vite": "^4.0.0",
-        "vue": "^3.3.4"
+         "vue": "^3.3.4"
     },
     "dependencies": {
+        "@inertiajs/inertia": "^0.11.0",
+        "@inertiajs/progress": "^0.2.7",
         "@inertiajs/vue3": "^1.0.11",
         "mitt": "^3.0.0",
-        "smooth-scrollbar": "^8.8.3",
-        "@inertiajs/inertia": "^0.11.0",
-        "@inertiajs/progress": "^0.2.7"
-    },
-  "externals": ["vue"]
+        "smooth-scrollbar": "^8.8.3"
+       
+    }
 }

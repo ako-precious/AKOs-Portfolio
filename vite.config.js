@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import laravel from "laravel-vite-plugin";
 import vue from "@vitejs/plugin-vue";
-// import  inertiaVue from './node_modules/vue/dist/';
+import  inertiaVue from './node_modules/vue/dist/vue.esm-bundler.js';
 
 export default defineConfig({
     plugins: [
@@ -22,13 +22,13 @@ export default defineConfig({
                 },
             },
         }),
-        inertiaVue({
-            resolve: async (name) => {
-              const pages = import.meta.glob('./Pages/**/*.vue')
+        // inertiaVue({
+        //     resolve: async (name) => {
+        //       const pages = import.meta.glob('./Pages/**/*.vue')
         
-              return (await pages[`./Pages/${name}.vue`]())
-            },
-          }),
+        //       return (await pages[`./Pages/${name}.vue`]())
+        //     },
+        //   }),
     ],
     resolve: {
         dedupe: ["vue"],
@@ -44,14 +44,14 @@ export default defineConfig({
         rollupOptions: {
             // make sure to externalize deps that shouldn't be bundled
             // into your library
-            // external: ["vue", "./node_module/vue3"],
-            // output: {
-            //   // Provide global variables to use in the UMD build
-            //   // for externalized deps
-            //   globals: {
-            //     vue: 'Vue',
-            //   },
-            // },
+            external: ["vue", "./node_modules/vue/dist/vue.esm-bundler.js"],
+            output: {
+              // Provide global variables to use in the UMD build
+              // for externalized deps
+              globals: {
+                vue: 'Vue',
+              },
+            },
           },
     },
     
