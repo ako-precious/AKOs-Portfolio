@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import laravel from "laravel-vite-plugin";
-import vue from "@vitejs/plugin-vue";
-import Vue from 'vue';
+import vue from "./node_modules/@vitejs/plugin-vue";
+import  inertiaVue from '@inertiajs/vue3';
 
 export default defineConfig({
     plugins: [
@@ -22,6 +22,13 @@ export default defineConfig({
                 },
             },
         }),
+        inertiaVue({
+            resolve: async (name) => {
+              const pages = import.meta.glob('./Pages/**/*.vue')
+        
+              return (await pages[`./Pages/${name}.vue`]())
+            },
+          }),
     ],
     resolve: {
         dedupe: ["vue"],
@@ -47,14 +54,5 @@ export default defineConfig({
             },
           },
     },
-    plugins: [
-        ...
-        inertiaVue({
-          resolve: async (name) => {
-            const pages = import.meta.glob('./Pages/**/*.vue')
-      
-            return (await pages[`./Pages/${name}.vue`]())
-          },
-        }),
-      ],
+    
 });
