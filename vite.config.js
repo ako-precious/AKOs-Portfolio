@@ -24,31 +24,12 @@ export default defineConfig({
         }),
     ],
 
-    resolve: (name) => {
-        const pages = import.meta.glob("./Pages/**/*.vue", { eager: true });
-        return pages[`./Pages/${name}.vue`];
-    },
-
-    build: {
-        /** If you set esmExternals to true, this plugins assumes that 
-               all external dependencies are ES modules */
+    resolve: {
         dedupe: ["vue"],
-
-        commonjsOptions: {
-            esmExternals: true,
-        },
-
-        // rollupOptions: {
-        //     // make sure to externalize deps that shouldn't be bundled
-        //     // into your library
-        //     external: ["vue", "./node_modules/vue/dist/vue.esm-bundler.js"],
-        //     output: {
-        //       // Provide global variables to use in the UMD build
-        //       // for externalized deps
-        //       globals: {
-        //         vue: 'Vue',
-        //       },
-        //     },
-        //   },
+    },
+    build: {
+        sourcemap: false,
+        minify: true,
+        outDir: "public/build",
     },
 });
