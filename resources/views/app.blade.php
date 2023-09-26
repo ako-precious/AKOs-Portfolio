@@ -22,8 +22,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 
     
-    @vite(['resources/css/app.css', 'resources/js/scrollbar.js'])
-    {{-- @inertiaHead --}}
+    @vite(['resources/css/app.css',  'resources/js/app.js','resources/js/scrollbar.js'])
+    @inertiaHead
     <style>
         html {
             scroll-behavior: smooth;
@@ -32,8 +32,8 @@
 </head>
 
 <body class="antialiased relative bg-black h-screen overflow-x-hiden" id="my-scrollbar">
-    {{-- @inertia --}}
-    <header
+    @inertia
+    {{-- <header
     class="header bg-darkblue fixed top-0 left-0 w-full flex justify-start items-center z-50 h-screen transition-all"
 >
     <div class="ml-6 h-12 w-12">
@@ -64,7 +64,7 @@
     >
         AKO's PORTFOLIO
     </h1>
-</header>
+</header> --}}
 </body>
 
 </html>
