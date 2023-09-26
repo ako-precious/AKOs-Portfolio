@@ -35,7 +35,7 @@ export default defineConfig({
             esmExternals: true,
           },
           rollupOptions: {
-            external: ['vue'],
+            
             output: {
               // Generate separate chunks for code that is imported dynamically
               chunkFileNames: "assets/js/[name]-[hash].js",
