@@ -31,5 +31,18 @@ export default defineConfig({
         sourcemap: false,
         minify: true,
         outDir: "public/build",
+        commonjsOptions: {
+            esmExternals: true,
+          },
+          rollupOptions: {
+            output: {
+              // Generate separate chunks for code that is imported dynamically
+              chunkFileNames: "assets/js/[name]-[hash].js",
+              globals: {
+                vue: 'Vue',
+              },
+      
+            },
+          },
     },
 });
