@@ -38,7 +38,7 @@ export default defineConfig({
             
             output: {
               // Generate separate chunks for code that is imported dynamically
-              chunkFileNames: "assets/js/[name]-[hash].js",
+              chunkFileNames: "/js/[name]-[hash].js",
               globals: {
                 vue: 'Vue',
               },
